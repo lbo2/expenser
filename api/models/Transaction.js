@@ -4,16 +4,16 @@ const TransactionSchema = new mongoose.Schema({
     text: {
         type: String,
         trim: true,
-        require: [true, 'Debes ingresar un nombre']
+        required: [true, 'Debes ingresar un nombre']
     },
     amount: {
         type: Number,
-        require: [true, 'Debes ingresar un monto']
+        required: [true, 'Debes ingresar un monto']
     },
     type: {
         type: String,
         trim: true,
-        require: [true, 'Debes ingresar un tipo de transaccion']
+        required: [true, 'Debes ingresar un tipo de transaccion']
     },
     createdAt: {
         type: Date,
